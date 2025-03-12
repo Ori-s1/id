@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: ltr;
+    text-align: left;
+    text-align: center;
+}
+
+.calendar-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid gray;
+}
+
+.controls {
+    margin: 20px 0;
+
+}
+
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    transition: opacity 0.3s ease;
+}
+
+.calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    vertical-align: top;
+    min-width: 80px;
+    height: 80px;
+}
+
+.calendar td:hover {
+    background-color: #f0f0f0;
+}
+
+.current-day {
+    background-color: goldenrod;
+    color: white;
+
+}
+
+.event {
+    background-color: #4ab44d;
+    color: white;
+}
+
+.event-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.fade-out {
+    opacity: 0;
+
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+
+}
+
+.event-form {
+    margin: 10px 0;
+    transition: opacity 0.3s ease;
+}
+
+.event-form.hidden {
+    display: none;
+}
+
+.event-form input {
+    padding: 5px;
+    margin: 5px;
+}
